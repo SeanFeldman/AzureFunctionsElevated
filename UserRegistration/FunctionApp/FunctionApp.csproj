@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <AzureFunctionsVersion>V3</AzureFunctionsVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="NServiceBus.AzureFunctions.InProcess.ServiceBus" Version="1.0.0" />
+        <PackageReference Include="NServiceBus" Version="7.4.7" Label="Forcing the latest transient dependency" />
+        <PackageReference Include="NServiceBus.Persistence.AzureTable" Version="3.1.0" />
+        <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.12" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Update="host.json" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="local.settings.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    </ItemGroup>
+</Project>

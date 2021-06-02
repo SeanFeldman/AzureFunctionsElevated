@@ -1,0 +1,8 @@
+{
+    "IsEncrypted": false,
+    "Values": {
+        "AzureWebJobsStorage": "add connection string",
+        "AzureWebJobsServiceBus": "add connection string",
+        "FUNCTIONS_WORKER_RUNTIME": "dotnet"
+    }
+}
